@@ -1,0 +1,17 @@
+
+[1mFrom:[0m /home/agustin/Desktop/Rails/poke_api/app/controllers/pokemons_controller.rb:15 PokemonsController#index:
+
+     [1;34m5[0m: [32mdef[0m [1;34mindex[0m
+     [1;34m6[0m:   conn = [1;34;4mFaraday[0m.new(
+     [1;34m7[0m:     [35murl[0m: [31m[1;31m'[0m[31mhttps://pokeapi.co/api/v2/pokemon/ditto[1;31m'[0m[31m[0m,
+     [1;34m8[0m:     [1;34m# params: {param: '1'},[0m
+     [1;34m9[0m:     [1;34m# headers: {'Content-Type' => 'application/json'}[0m
+    [1;34m10[0m:   )
+    [1;34m11[0m:   
+    [1;34m12[0m:   response = conn.post([31m[1;31m'[0m[31m/[1;31m'[0m[31m[0m) [32mdo[0m |req|
+    [1;34m13[0m:     req.params[[31m[1;31m'[0m[31mlimit[1;31m'[0m[31m[0m] = [1;34m100[0m
+    [1;34m14[0m:     req.body = {[35mquery[0m: [31m[1;31m'[0m[31mchunky bacon[1;31m'[0m[31m[0m}.to_json
+ => [1;34m15[0m:      binding.pry
+    [1;34m16[0m:   [32mend[0m
+    [1;34m17[0m: [32mend[0m
+
